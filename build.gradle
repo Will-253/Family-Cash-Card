@@ -20,6 +20,7 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation("org.junit.jupiter:junit-jupiter:5.9.2")
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher' // See https://docs.gradle.org/8.3/userguide/upgrading_version_8.html#test_framework_implementation_dependencies
     implementation 'org.springframework.data:spring-data-jdbc'
     implementation 'org.springframework.boot:spring-boot-starter-security'
@@ -38,6 +39,6 @@ test{
         exceptionFormat "full"
         showCauses true
         showStackTraces true
-        showStandardStreams false
+        showStandardStreams true
     }
 }
